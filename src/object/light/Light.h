@@ -23,22 +23,4 @@ class Light {
         virtual int getType();
 };
 
-class PointLight : public Light {
-    private:
-        vec3 position;
-        vec3 attenuation;
-    public:
-        PointLight(vec3 position, vec3 color, vec3 attenuation);
-        vec3 getPosition();
-        vec3 getAttenuation();
-};
-
-class DirectionalLight : public Light {
-    private:
-        vec3 direction;
-    public:
-        DirectionalLight(vec3 direction, vec3 color);
-        vec3 getDirection();
-};
-
 #endif
